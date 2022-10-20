@@ -1,0 +1,7 @@
+{
+  "name": "proyectoPassenger",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
