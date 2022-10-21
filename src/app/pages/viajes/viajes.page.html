@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Viajes</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-img src="assets/images/carpooling.png" ></ion-img>
+ 
+
+  <ion-button class="boton">Comparte tu viaje</ion-button>
+  <ion-button class="boton">Busca tu viaje</ion-button>
+
+
+  
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      
+      <ion-tab-button tab="map" ion-button [routerLink]="['/cuenta']">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Cuenta</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="map" ion-button [routerLink]="['/viajes']">
+        <ion-icon name="car"></ion-icon>
+        <ion-label>Organiza tu viaje</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="speakers" ion-button [routerLink]="['/historial']">
+        <ion-icon name="bookmark"></ion-icon>
+        <ion-label>Historial</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>

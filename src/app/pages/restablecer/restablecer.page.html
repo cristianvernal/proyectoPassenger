@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Restablecer constraseña</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h3>Ingresa tu correo institucional</h3>
+  
+
+    <ion-input type="email" placeholder="Ejemplo: alumno@duocuc.cl" class="correo"></ion-input>
+    <ion-button type="submit" (click)="presentAlert()" ion-button [routerLink]="['/login']">Recuperar contraseña</ion-button>
+
+
+</ion-content>
